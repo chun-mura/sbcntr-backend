@@ -39,7 +39,6 @@
           "name": "DB_USERNAME"
         }
       ],
-      "memory": null,
       "memoryReservation": 512,
       "image": "<IMAGE1_NAME>",
       "essential": true,
