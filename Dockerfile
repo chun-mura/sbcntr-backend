@@ -24,4 +24,3 @@ FROM gcr.io/distroless/base-debian10
 COPY --from=build-env /app/main /
 EXPOSE 80
 ENTRYPOINT ["/main"]
-
