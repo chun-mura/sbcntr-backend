@@ -20,7 +20,8 @@ RUN go get golang.org/x/lint/golint && \
 
 ### If use TLS connection in container, add ca-certificates following command.
 ### > RUN apk add --no-cache ca-certificates
-FROM gcr.io/distroless/base-debian10
+# FROM gcr.io/distroless/base-debian10
+FROM alpine:3.14
 COPY --from=build-env /app/main /
 EXPOSE 80
 ENTRYPOINT ["/main"]
